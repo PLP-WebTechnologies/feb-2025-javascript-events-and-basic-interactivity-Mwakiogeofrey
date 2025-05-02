@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Portfolio Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Dark Mode Styles */
+  
+  </style>
+</head>
+<body>
+  <!-- Theme Toggle Button -->
+  <button id="themeToggle">Switch to Dark Mode</button>
+
+  <!-- Portfolio Section with Hover and Double-click -->
+  <section id="portfolio">
+    <img src="project1.jpg" alt="Project 1" class="portfolio-img" />
+    <img src="project2.jpg" alt="Project 2" class="portfolio-img" />
+  </section>
+
+  <!-- Tabs for Skills -->
+  <div class="tabs">
+    <button class="tab-btn" data-tab="frontend">Frontend</button>
+    <button class="tab-btn" data-tab="backend">Backend</button>
+    <button class="tab-btn" data-tab="tools">Tools</button>
+  </div>
+  <div class="tab-content" id="frontend">HTML, CSS, JavaScript</div>
+  <div class="tab-content hidden" id="backend">Node.js, Express</div>
+  <div class="tab-content hidden" id="tools">Git, Webpack</div>
+
+  <!-- Contact Form -->
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <textarea id="message" placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
